@@ -7,143 +7,30 @@ html {
   }
   body {
     text-rendering: optimizeLegibility;
-    background-color: $color-bg;
-    color: $color-base;
+    background-color: $bg-white;
+    color: $color-black;
     font-weight: normal;
     position: relative;
     width: 100%;
     font: {
-      family: $font-family-base;
-      size: $font-size-base;
+      family: $font-gz;
+      size: $text-size;
     };
-    
-    @media (max-width: $screen-md-min) {
-       font-size: 14px;   
-    }
-    
+        
   }
-  
-  
-  /*------------------------------------------------------------------------------Healing texts */
-  
-  
-  h1, .h1, 
-  h2, .h2,
-  h3, .h3,
-  h4, .h4,
-  h5, .h5,
-  h6, .h6 {
-    line-height: 100%;
-    margin-bottom: $margen;
-    font-family: $font-family-base;
-    font-weight: $font-weight-bold;
-    &.thin{
-      font-weight: 100;
+
+h1,h2,h3,h4,h5,h6,p,a,small,span,div,ul,li{
+    font-family: $font-gz;
+}
+
+h1{
+    font-size: $big-size;     
+
+    @media (max-width: $screen-md){
+        font-size:  $big-tablets-size;
     }
-    &.italic{
-      font-style: italic;
+
+    @media (max-width: $screen-sm){
+        font-size:  $big-mobile-size;
     }
-    
-    
-  }
-  
-  h1,
-  .h1 {
-    font-size: $font-size-h1;
-    @media (max-width: $screen-md-min) {
-      font-size: 32px;
-    }
-  }
-  
-  h2,
-  .h2 {
-    font-size: $font-size-h2;
-    
-    @media (max-width: $screen-md-min) {
-      font-size: 25px;
-    }
-  }
-  
-  h3,
-  .h3 {
-    font-size: $font-size-h3;
-    &.thin{
-      font-weight: $font-weight-normal;
-    }
-    @media (max-width: $screen-md-min) {
-      font-size: 22px;
-    }
-  }
-  
-  h4,
-  .h4 {
-    font-size: $font-size-h4;
-    font-weight: $font-weight-normal;
-    
-    @media (max-width: $screen-md-min) {
-      font-size: 20px;
-    }
-  }
-  
-  h5,
-  .h5 {
-    font-size: $font-size-h5;
-    font-weight: $font-weight-normal;
-    
-    @media only screen and (max-width: $screen-md-min) {
-      font-size: 18px; 
-    }
-    
-  }
-  h6,
-  .h6 {
-    font-size: $font-size-h6;
-    font-weight: $font-weight-normal;
-    
-    @media only screen and (max-width: $screen-md-min) {
-      font-size: 15px;
-    }
-  }
-  
-  
-  /*------------------------------------------------------------------------------Strong */
-  
-  strong {
-    font-weight: $font-weight-bold;
-  }
-  
-  /*------------------------------------------------------------------------------Links */
-  
-  a {
-    color: $color-primary;
-    //text-decoration: none;
-  }
-  
-  /*------------------------------------------------------------------------------Radius */
-  
-  .border-radius{
-      @include border-radius(20px);
-  }
-  
-  /*------------------------------------------------------------------------------General text cont */
-  
-  .general-cont{
-    h1,h2,h3,h4,h5,h6, a, span{
-      margin-bottom: 20px;
-    }
-    span{
-      a{
-        margin-bottom: 0;
-      }
-    }
-    p{
-      margin-bottom: 20px;
-      a, span{
-        margin-bottom: 0;
-      }
-    }
-    ul{
-      margin-bottom: 30px;
-    }
-  }
-  
+}
