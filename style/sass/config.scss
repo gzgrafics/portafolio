@@ -34,17 +34,23 @@
 /*-----------font-color-----------*/
 
     /*colors-basic*/
-    $color-white: #FFFFFF;
-    $color-black: #000000;
+    $color-white:   #FFFFFF;
+    $color-black:   #000000;
+    $color-primary: #41D7A7;
+    $color-dark:    #333333;
 
 /*-----------font-color-----------*/
 
 /*-----------Bg colors-----------*/
 
-    /*colors-basic*/
+    /*background colors-basic*/
     $bg-black:  #000000;
     $bg-white:  #FFFFFF;
     $bg-gray:   #C4C4C4;
+
+    /*background colors-page*/
+    $bg-dark:    #333333;
+    $bg-primary: #41D7A7;
 
 /*-----------Bg colors-----------*/
 

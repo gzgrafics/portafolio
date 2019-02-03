@@ -24,13 +24,49 @@ h1,h2,h3,h4,h5,h6,p,a,small,span,div,ul,li{
 }
 
 h1{
-    font-size: $big-size;     
+    font-size: $big-size;
 
     @media (max-width: $screen-md){
-        font-size:  $big-tablets-size;
+        font-size: $big-tablets-size;
     }
 
     @media (max-width: $screen-sm){
-        font-size:  $big-mobile-size;
+        font-size: $big-mobile-size;
+    }
+
+    @media (max-width: $screen-xs-tablet){
+        font-size: $big-mobile-small-size;
+    }
+}
+
+h2{
+    font-size: $medium-size;
+
+    @media (max-width: $screen-md){
+        font-size: $medium-tablets-size;
+    }
+
+    @media (max-width: $screen-sm){
+        font-size: $medium-mobile-size;
+    }
+
+    @media (max-width: $screen-sm){
+        font-size: $medium-mobile-small-size;
+    }
+}
+
+ul{
+    padding: 0px;
+    list-style: none;
+}
+
+.bg-gz-dark{
+    background-color: $bg-dark;
+}
+
+.container-full-mobile{
+    @media (max-width: $screen-xs-tablet){
+        margin: 0px !important;
+        padding: 0px !important;
     }
 }
