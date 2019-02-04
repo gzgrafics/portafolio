@@ -1,0 +1,1 @@
+$(document).ready(function(){var e=document.querySelector(".menu-burguer");e.addEventListener("click",function(){e.classList.contains("open")?e.classList.remove("open"):e.classList.add("open")},!1),$(".menu-burguer").click(function(){$(".gz-menu").toggleClass("active")})});
